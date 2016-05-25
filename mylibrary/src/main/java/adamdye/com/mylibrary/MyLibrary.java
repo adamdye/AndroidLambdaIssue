@@ -4,7 +4,7 @@ import java.util.function.Function;
 
 public class MyLibrary {
 
-    public void methodThatAcceptsLambda(Function function) {
+    public void methodThatAcceptsLambda(Function<Object, Boolean> function) {
         function.apply(new Object());
     }
 

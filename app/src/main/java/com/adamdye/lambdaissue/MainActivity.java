@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void methodThatAcceptsLambda(Function function) {
+    public void methodThatAcceptsLambda(Function<Object, Boolean> function) {
         function.apply(new Object());
     }
 
